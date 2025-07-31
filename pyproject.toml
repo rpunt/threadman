@@ -1,0 +1,33 @@
+[project]
+name = "threadman"
+version = "0.1.0"
+description = "A simple thread manager for Python"
+readme = "README.md"
+authors = [
+    { name = "Ryan Punt", email = "ryan@mirum.org" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "tqdm>=4.67.1",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+urls = {homepage = "https://github.com/your-username/threadman"}
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["threadman"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["threadman", "README.md", "LICENSE"]
