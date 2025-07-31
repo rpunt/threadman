@@ -55,6 +55,7 @@ manager.run(my_task)
 - `queue_timeout`: Timeout for queue operations (default: None)
 
 ## License
+
 MIT
 
 ---

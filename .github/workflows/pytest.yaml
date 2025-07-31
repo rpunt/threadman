@@ -36,9 +36,6 @@ jobs:
       - name: Test with pytest
         env:
           CI: true
-          ARGOCLI_SERVER: https://dummy-argo-server.domain.tld
-          ARGOCLI_NAMESPACE: test-namespace
-          ARGOCLI_USERNAME: user@domain.tld
         run: |
           source .venv/bin/activate
-          pytest --doctest-modules --cov=argocli --cov-report=term
+          pytest --doctest-modules --cov=threadman --cov-report=term
